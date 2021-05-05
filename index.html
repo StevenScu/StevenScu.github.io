@@ -1,10 +1,184 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Steven Scudari's GitHub Page</title>
-  </head>
-  <body>
-    <h1>Welcome to my GitHub!</h1>
-    <p>I'm Steven Scudari, a student at UCI.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Scudari's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7567b7c805.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top"></div>
+    
+    <!-- The navbar on the top of the website -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__name">
+                <a href="#top" id="navbar__logo">Steven Scudari</a>
+                <a id="navbar__title">Computer Scientist</a>
+            </div>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#top" class="navbar__links" id="welcome-page">Welcome!</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About Me</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+                </li>
+                <li class="button">
+                    <a href="Steven Scudari Resume.pdf" target="_blank" class="navbar__links" id="resume">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- The contact links below the navbar -->
+    <nav class="contacts">
+        <div class="contacts__container">
+            <ul class="contacts__menu">
+                <li class="contacts__item">
+                    <a href="https://github.com/StevenScu" target="_blank" class="contacts__links" id="github_link"><i class="fa fa-github"></i>GitHub</a>
+                </li>
+                <li class="contacts__item">
+                    <a href="https://www.linkedin.com/in/steven-scudari/" target="_blank" class="contacts__links" id="linkedin_link"><i class="fa fa-linkedin"></i>Linkedin</a>
+                </li>
+                <li class="contacts__item">
+                    <a href="mailto:sscudari@uci.edu" target="_blank" class="contacts__links" id="email_link"><i class="fa fa-envelope"></i><span>Email: sscudari@uci.edu</span>
+                        <div class="email__tooltip">
+                            <span class="tooltiptext" id="tooltip">Click this to email me in your default messaging app!</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome section -->
+    <div class="welcome" id="welcome">
+        <div class="welcome__container">
+            <div class="welcome__img--container">
+                <div class="welcome__img--card">
+                    <img class= "welcome__img" src="images\me.jpg" alt="Picture of me">
+                </div>
+            </div>
+            <div class="welcome__content">
+                <h1 class="welcome__heading">Welcome to Steven Scudari's website!</h1>
+            <p class="welcome__description">Here, you can get an idea of who I am and also find links to my work.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About me section -->
+    <div class="about" id="about">
+        <div class="about__container">
+            <div class="about__img--container">
+                <div class="about__img--card">
+                    <img class="interest1_img" src="images\cube.png" alt="One of my hobbies: solving puzzles!">
+                </div>
+            </div>
+            <div class="about__content">
+                <h1>About me</h1>
+                <h2>Hello! I'm Steven Scudari!</h2>
+                <p>I am a computer science major at UC Irvine who is looking for CS work.</p>
+                <p>Before attending UC Irvine, I worked as a part-time tutor at Pasadena City College. 
+                    I was able to help my peers while also improving my computer science and teaching skills. 
+                    I was also the treasurer of She.Codes, a club focused on the inclusion of women in CS.
+                </p>
+                <p>
+                    From both UC Irvine and Pasadena City College, I have learned many computer science skills
+                    that have prepared me to tackle almost any field. I am ready to learn something new if I need to,
+                    but I am already proficient in C++, Python, Java and more!      
+                </p>
+                <p>
+                    In my free time I like to solve puzzles like the Rubik's cube and play video games. They're a big
+                    reason why I got into programming! I am also constantly looking for the next CS challenge to take up.
+                    Scroll down to see some of the projects that I have done!
+                </p>
+            </div>
+            <div class="about__img--container">
+                <div class="about__img--card">
+                    <img class="interest2_img" src="images\gamepad1.png" alt="One of my hobbies: playing games!">
+                </div>
+            </div>
+        </div>
+        <div class="about__altcontainer">
+            <div class="about__img--banner">
+                <img src="images\award.jpg" alt="Me after winning a scholarship!">
+            </div>
+            <pre div class="about__content">
+                <p id="awardDescription">             ^Here I am accepting a scholarship at Pasadena City College!</p>
+            </pre div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="projects__wrapper">
+            <h2>Here are some of my most recent projects. Click on the name to see more!</h2>
+            <div class="projects__info">
+                <div>
+                        <a target="_blank" href="https://devpost.com/software/unity-game-attack-the-towers?ref_content=my-projects-tab&ref_feature=my_projects"><img class="projects__gif" src="images\td.gif" alt="Demo of the tower defense game"></a>
+                </div>
+                <div>
+                    <a href="https://devpost.com/software/unity-game-attack-the-towers?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank">
+                        <h3>Attack the Towers!</h3>
+                    </a>
+                    <p>In this game, made with Kent Phan and Ralph Parin for LA Hacks 2021, you place towers to stop
+                        the enemy from advancing to your side. The enemy also places towers based on the position of your units.
+                        You will need to upgrade your towers and overwhelm the enemy forces... and the enemy AI!
+                    </p>
+                    <p>Made with Unity</p>
+                </div>
+            </div>
+            <div class="projects__info">
+                <img class="projects__gif" src="images\closer.gif" alt="Demo of the closer together app">
+                <div>
+                    <a href="https://devpost.com/software/closer-together" target="_blank">
+                        <h3>Closer Together</h3>
+                    </a>
+                    <p>This app, made with Rafael Betita for HackUCI 2021, was a response to the separation we felt from others
+                        during Covid-19. In this app, you can save contacts to a Firebase server including their basic info but also
+                        the next time you want to speak to them. The app will then remind you to keep in touch so that you can feel closer
+                        together.
+                    </p>
+                    <p>Made with Javascript, React, Grommet, and Firebase</p>
+                </div>
+                
+            </div>
+            <div class="projects__info">
+                <img class="projects__gif" src="images\musicplayer.gif" alt="Demo of the music player app">
+                <div>
+                    <a href="https://github.com/StevenScu/music-player" target="_blank">
+                        <h3>Music Player</h3>
+                    </a>
+                    <p>Unsatisfied with the standard MP3 players that Windows offered, I set out to make my own. This app allows
+                        you to import your songs and will sort them by song order. It gets this info from the metadata stored
+                        in MP3 files. The user can then play their songs with a very simple, yet unintrusive, interface.
+                    </p>
+                    <p>Made with C++ and the Qt GUI</p>
+                </div>
+            </div>
+            <pre h2></pre h2>
+            <h2>...and more!</h2>
+            <h2>Read my resume to learn even more about me. Thank you for visiting!</h2>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <h4>I made this website with Javascript, CSS, and HTML. It's being hosted by Github Pages.</h2>
+        <a href="https://github.com/StevenScu/StevenScu.github.io" target="_blank">Click here to see the source code</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
 </html>
